@@ -3,32 +3,30 @@
 A clean and responsive one-page website for a local barbershop. Built to showcase the business, highlight services, and provide an easy contact point for clients.
 
 ## 🖥️ Tech Stack
-- HTML5
-- CSS3 (with Tailwind, if used)
-- JavaScript (Vanilla)
-- Hosted on [Netlify](#) or [Vercel](#)
+- VueJS
+- Tailwind
 
 ## 📸 Features
-- Hero section with barbershop photo
-- About section
-- Image gallery (cuts & styles)
-- Contact form (powered by Formspree or EmailJS)
+- Hero
+- Services
+- Testimonials
+- Contact form
 
 ## 🚀 Setup
-Clone the repo and open `index.html` in your browser – that’s it.
+Clone the repo, npm install and npm run dev – that’s it.
 
 ```bash
 git clone https://github.com/TomasJunor/barbershop-landing-page.git
-cd barbershop-landing-page
+npm install
+npm run dev
 ```
-
 
 # 🧠 What I Learned
 - Structuring content for service-based businesses
 
-- Optimizing layout and images for mobile
+- Optimizing layout
 
-- Building clean contact forms
+- Conversion structure
 
 # 🧔‍♂️ Client
 This site was built for a local barbershop to support their online presence. Photos and content provided by the owner.
