@@ -21,6 +21,14 @@ npm install
 npm run dev
 ```
 
+### Configuration
+
+Set the WhatsApp number in your environment so booking links open the app directly:
+
+```bash
+export VITE_WHATSAPP_NUMBER=54911xxxxxxxx
+```
+
 # 🧠 What I Learned
 - Structuring content for service-based businesses
 
