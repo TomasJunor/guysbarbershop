@@ -22,12 +22,9 @@
           card.badge ? 'bg-gradient-to-br from-stone-900 to-stone-950 shadow-xl shadow-amber-500/25' : ''
         ]"
       >
-        <div class="flex items-start justify-between">
-          <div>
-            <h4 class="text-xl font-semibold">{{ card.name }}</h4>
-            <p v-if="card.badge" class="text-amber-300 text-sm">{{ card.badge }}</p>
-          </div>
-          <span class="text-amber-300 font-semibold">{{ card.price }}</span>
+        <div class="mb-4">
+          <h4 class="text-xl font-semibold">{{ card.name }}</h4>
+          <p v-if="card.badge" class="text-amber-300 text-sm">{{ card.badge }}</p>
         </div>
         <p class="text-stone-300/80 mt-3">{{ card.description }}</p>
         <div class="mt-4 inline-flex items-center gap-2 text-xs text-emerald-300">

@@ -43,27 +43,7 @@
           </div>
         </div>
         <div class="bg-stone-900/60 border border-amber-500/20 rounded-2xl p-6 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-stone-950 font-bold">DJ</div>
-            <div>
-              <p class="text-xs uppercase tracking-[0.3em] text-amber-300">{{ ctaCopy.playlist.eyebrow }}</p>
-              <h4 class="text-lg font-semibold">{{ ctaCopy.playlist.title }}</h4>
-            </div>
-          </div>
-          <div class="space-y-2 text-sm text-stone-300/90">
-            <div
-              v-for="track in ctaCopy.playlist.tracks"
-              :key="track.name"
-              class="flex items-center justify-between"
-            >
-              <span>{{ track.name }}</span>
-              <span class="text-amber-300">{{ track.duration }}</span>
-            </div>
-          </div>
-          <div class="h-1.5 rounded-full bg-stone-800 overflow-hidden">
-            <div class="w-2/3 h-full bg-gradient-to-r from-amber-500 via-orange-500 to-emerald-400 animate-pulse" />
-          </div>
-          <p class="text-xs text-stone-400">{{ ctaCopy.playlist.caption }}</p>
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2SxPwmD1Sh6qGJhsRKEjd2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ const copy = {
     },
     header: {
       eyebrow: "Guy's Barber Shop",
-      title: "Cortes, fades y beats",
+      // title: "Cortes, fades y beats",
       nav: [
         { label: "Experiencia", href: "#features" },
         { label: "Servicios", href: "#services" },
@@ -19,7 +19,7 @@ const copy = {
     hero: {
       badge: "Palermo - Desde 2016 - Noches de soft techno",
       title: "Donde los fades afilados se mezclan con grooves suaves.",
-      description: "Guy's Barber Shop mezcla cortes artesanales, charlas calidas y una sesion con toques de DJ curada por el propio Guy. Entra a un estudio acogedor en Palermo con madera vintage, lineas modernas y una banda sonora que nunca invade tu vibra.",
+      description: "Guy's Barber Shop mezcla cortes artesanales, charlas calidas y una sesion con toques de DJ curada por el propio Guy. Entra a un local en Palermo con vibras inigualables y una banda sonora que nunca falta.",
       primaryCta: "Reserva tu proximo fade",
       secondaryCta: "Ver el menu",
       bullets: [
@@ -29,7 +29,7 @@ const copy = {
       ],
       card: {
         eyebrow: "Dentro de la barberia",
-        description: "Madera calida, lineas limpias y un pulso tranquilo para mantener las tijeras en ritmo.",
+        description: "Madera calida, lineas precisas y un pulso tranquilo para mantener las tijeras en ritmo.",
         location: "Palermo, Buenos Aires"
       }
     },
@@ -54,27 +54,24 @@ const copy = {
     },
     services: {
       badge: "El menu",
-      title: "Cortes frescos, barbas limpias, terminaciones suaves.",
+      title: "Cortes frescos, barbas perfectas, terminaciones suaves.",
       viewLocation: "Ver ubicacion",
       cards: [
         {
           name: "Corte clasico",
-          price: "$18",
-          description: "Corte a tijera o maquina, toalla caliente y peinado final con nuestra arcilla mate preferida.",
-          duration: "40-45 minutos"
+          description: "Corte a tijera o maquina con acabado limpio y peinado final con nuestros productos preferidos.",
+          duration: "30 minutos"
         },
         {
           name: "Fade + barba",
           badge: "Mas reservado",
-          price: "$24",
           description: "Skin fade o taper, esculpido de barba con toalla caliente y balsamo refrescante. Equilibrado para mantener la linea impecable.",
-          duration: "55-60 minutos"
+          duration: "45 minutos"
         },
         {
           name: "Buzz y refresh",
-          price: "$12",
           description: "Buzz uniforme, limpieza de cuello y ajuste rapido de estilo. Ideal entre turnos completos.",
-          duration: "25-30 minutos"
+          duration: "25 minutos"
         }
       ],
       extras: [
@@ -95,24 +92,24 @@ const copy = {
       cards: [
         {
           name: "Lucas P.",
-          quote: "La musica esta en el punto justo y Guy siempre recuerda como me gusta el fade.",
+          quote: "La musica esta en el punto justo y Guy siempre recuerda como me gusta el corte.",
           note: "Viene cada semana"
         },
         {
-          name: "Camila R.",
-          quote: "Calido, respetuoso y preciso con las tijeras. Traigo a mi hermano porque el ambiente es inclusivo.",
-          note: "Llega con su crew"
+          name: "Nicolas K.",
+          quote: "Una barberia que te hace sentir como en casa. El servicio, la onda de Guy y el lugar estan impecables. Recomiendo mucho.",
+          note: "Vecino de Palermo"
         },
         {
-          name: "Diego S.",
-          quote: "Cafe, charla y una barba alineada que dura. La playlist es tan chill que puedo atender llamadas.",
-          note: "Trabaja remoto"
+          name: "Facundo C.",
+          quote: "Es el numero uno. Ir al turno siempre es un placer porque le pone toda la onda a lo que hace. Lo vuelvo loco con lo que le pido y siempre lo resuelve.",
+          note: "Cliente fiel"
         }
       ]
     },
     cta: {
       badge: "Visitanos",
-      title: "Reserva una silla o cae sin turno; la musica ya suena.",
+      title: "Reserva un turno; la musica ya suena.",
       description: "Escribinos por Instagram, mandanos un WhatsApp o simplemente pasa. Estamos a metros del subte en Guemes, rodeados de cafes y galerias de Palermo.",
       chips: ["Lun-Vie - 09:00-20:00", "Beruti 3776, Palermo"],
       mapCta: "Abrir en Maps",
@@ -196,22 +193,19 @@ const copy = {
       cards: [
         {
           name: "Classic cut",
-          price: "$18",
-          description: "Tailored scissor or clipper cut, hot towel and styling finish with our go-to matte clay.",
-          duration: "40-45 minutes"
+          description: "Tailored scissor or clipper cut with a clean finish and styling using our go-to matte clay.",
+          duration: "30 minutes"
         },
         {
           name: "Fade + beard detail",
           badge: "Most booked",
-          price: "$24",
           description: "Skin fade or taper, beard sculpting with hot towel and cooling balm. Balanced to keep the beard line crisp.",
-          duration: "55-60 minutes"
+          duration: "45 minutes"
         },
         {
           name: "Buzz and refresh",
-          price: "$12",
           description: "Even clipper buzz, neck clean-up and a quick style tune-up. Perfect between full appointments.",
-          duration: "25-30 minutes"
+          duration: "25 minutes"
         }
       ],
       extras: [
@@ -236,14 +230,14 @@ const copy = {
           note: "Weekly visitor"
         },
         {
-          name: "Camila R.",
-          quote: "Warm, respectful and sharp with scissors. I bring my brother because the vibe is inclusive and relaxed.",
-          note: "Brings the crew"
+          name: "Nicolas K.",
+          quote: "A barbershop that makes you feel at home. The service, Guy's vibe and the space are all immaculate. Highly recommend.",
+          note: "Palermo neighbor"
         },
         {
-          name: "Diego S.",
-          quote: "You get coffee, conversation and a beard lineup that lasts. The playlist stays chill enough to take a call.",
-          note: "Remote worker"
+          name: "Facundo C.",
+          quote: "He is number one. Every visit feels great because he brings energy to everything he does. I give him wild requests and he still nails them.",
+          note: "Loyal client"
         }
       ]
     },

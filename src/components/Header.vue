@@ -13,7 +13,7 @@
         </div>
         <div>
           <p class="text-xs uppercase tracking-[0.25em] text-amber-400/80">{{ headerCopy.eyebrow }}</p>
-          <h1 class="text-xl md:text-2xl font-semibold">{{ headerCopy.title }}</h1>
+          <!-- <h1 class="text-xl md:text-2xl font-semibold">{{ headerCopy.title }}</h1> -->
         </div>
       </div>
 
