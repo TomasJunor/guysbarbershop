@@ -12,22 +12,41 @@
           </div>
         </div>
         <div>
-          <p class="text-xs uppercase tracking-[0.25em] text-amber-400/80">Guy's Barber Shop</p>
-          <h1 class="text-xl md:text-2xl font-semibold">Cuts • Fades • Beats</h1>
+          <p class="text-xs uppercase tracking-[0.25em] text-amber-400/80">{{ headerCopy.eyebrow }}</p>
+          <h1 class="text-xl md:text-2xl font-semibold">{{ headerCopy.title }}</h1>
         </div>
       </div>
 
       <nav class="hidden md:flex items-center gap-10 text-sm">
-        <a class="hover:text-amber-200 transition-colors" href="#features">Experience</a>
-        <a class="hover:text-amber-200 transition-colors" href="#services">Services</a>
-        <a class="hover:text-amber-200 transition-colors" href="#testimonials">Community</a>
-        <a class="hover:text-amber-200 transition-colors" href="#contact">Visit</a>
+        <a
+          v-for="item in navLinks"
+          :key="item.href"
+          class="hover:text-amber-200 transition-colors"
+          :href="item.href"
+        >
+          {{ item.label }}
+        </a>
       </nav>
 
-      <button class="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 shadow-lg shadow-amber-500/30 hover:from-amber-400 hover:to-orange-400 transition-colors">
-        Book a seat
-        <span class="h-2 w-2 rounded-full bg-lime-400 animate-pulse" />
+      <button
+        class="hidden md:inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] rounded-full border border-amber-500/40 text-amber-100 hover:text-amber-50"
+        type="button"
+        @click="toggleLocale"
+      >
+        {{ localeButtonLabel }}
       </button>
+
+      <a
+        class="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 shadow-lg shadow-amber-500/30 hover:from-amber-400 hover:to-orange-400 transition-colors"
+        :href="whatsappLink || '#'"
+        target="_blank"
+        rel="noreferrer noopener"
+        :aria-disabled="!whatsappLink"
+        @click="handleWhatsappClick"
+      >
+        {{ headerCopy.ctaLabel }}
+        <span class="h-2 w-2 rounded-full bg-lime-400 animate-pulse" />
+      </a>
 
       <button class="md:hidden text-amber-300" @click="mobileMenuOpen = !mobileMenuOpen">
         <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -41,20 +60,57 @@
 
     <div v-if="mobileMenuOpen" class="md:hidden border-t border-amber-500/20 bg-stone-950/95">
       <div class="max-w-6xl mx-auto px-4 py-4 space-y-3">
-        <a class="block text-amber-100 hover:text-amber-300" href="#features" @click="mobileMenuOpen = false">Experience</a>
-        <a class="block text-amber-100 hover:text-amber-300" href="#services" @click="mobileMenuOpen = false">Services</a>
-        <a class="block text-amber-100 hover:text-amber-300" href="#testimonials" @click="mobileMenuOpen = false">Community</a>
-        <a class="block text-amber-100 hover:text-amber-300" href="#contact" @click="mobileMenuOpen = false">Visit</a>
-        <button class="w-full px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 font-semibold" @click="mobileMenuOpen = false">
-          Book a seat
+        <a
+          v-for="item in navLinks"
+          :key="item.href"
+          class="block text-amber-100 hover:text-amber-300"
+          :href="item.href"
+          @click="mobileMenuOpen = false"
+        >
+          {{ item.label }}
+        </a>
+        <button
+          class="w-full px-4 py-2 rounded-full border border-amber-500/40 text-amber-100 font-semibold"
+          type="button"
+          @click="toggleLocale"
+        >
+          {{ localeButtonLabel }}
         </button>
+        <a
+          class="w-full px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 font-semibold text-center inline-flex justify-center"
+          :href="whatsappLink || '#'"
+          target="_blank"
+          rel="noreferrer noopener"
+          :aria-disabled="!whatsappLink"
+          @click="onMobileWhatsappClick"
+        >
+          {{ headerCopy.ctaLabel }}
+        </a>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
+import { useI18n } from '../i18n';
+import { useWhatsApp } from '../composables/useWhatsApp';
 
 const mobileMenuOpen = ref(false);
+
+const { t, locale, setLocale } = useI18n();
+const headerCopy = computed(() => t('header'));
+const navLinks = computed(() => headerCopy.value?.nav ?? []);
+const localeButtonLabel = computed(() => (locale.value === 'es' ? 'ES → EN' : 'EN → ES'));
+
+const { whatsappLink, handleWhatsappClick } = useWhatsApp();
+
+const toggleLocale = () => {
+  setLocale(locale.value === 'es' ? 'en' : 'es');
+};
+
+const onMobileWhatsappClick = (event) => {
+  handleWhatsappClick(event);
+  mobileMenuOpen.value = false;
+};
 </script>

@@ -21,6 +21,16 @@ npm install
 npm run dev
 ```
 
+## Configuration
+
+Create a `.env` file in the project root with your WhatsApp number so bookings open the WhatsApp app directly:
+
+```
+VITE_WHATSAPP_NUMBER=54911XXXXXXX
+```
+
+Use the international format without `+` or spaces. All booking CTAs reuse this number so you only manage it in one place.
+
 # 🧠 What I Learned
 - Structuring content for service-based businesses
 

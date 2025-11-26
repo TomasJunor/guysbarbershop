@@ -7,31 +7,32 @@
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-8">
           <p class="inline-flex items-center gap-2 px-3 py-1 text-xs uppercase tracking-[0.3em] rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-200">
-            Palermo • Since 2016 • Soft Techno Nights
+            {{ heroCopy.badge }}
           </p>
           <h2 class="text-4xl md:text-5xl font-bold leading-tight">
-            Where sharp fades meet a smooth electronic groove.
+            {{ heroCopy.title }}
           </h2>
           <p class="text-lg text-stone-200/80 leading-relaxed">
-            Guy’s Barber Shop blends artisan cuts, warm conversation, and a subtle DJ set curated by Guy himself. Step into a cozy Palermo studio with vintage wood, modern lines, and a soundtrack that never overpowers your vibe.
+            {{ heroCopy.description }}
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
-            <button class="group inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 font-semibold shadow-lg shadow-amber-500/30 hover:from-amber-400 hover:to-orange-400 transition-all">
-              Book your next fade
+            <a
+              class="group inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 font-semibold shadow-lg shadow-amber-500/30 hover:from-amber-400 hover:to-orange-400 transition-all"
+              :href="whatsappLink || '#'"
+              target="_blank"
+              rel="noreferrer noopener"
+              :aria-disabled="!whatsappLink"
+              @click="handleWhatsappClick"
+            >
+              {{ heroCopy.primaryCta }}
               <span class="h-2 w-2 rounded-full bg-lime-400 animate-ping" />
-            </button>
+            </a>
             <a href="#services" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-amber-500/30 text-amber-100 hover:border-amber-300 hover:text-amber-200 transition-colors">
-              See the menu
+              {{ heroCopy.secondaryCta }}
               <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="m9 18 6-6-6-6" />
               </svg>
             </a>
-          </div>
-          <div class="flex flex-wrap gap-6 text-sm text-stone-300/80">
-            <div class="flex items-center gap-2">
-              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" /> Walk-ins welcome</div>
-            <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-amber-400" /> Specialty coffee & vinyl corner</div>
-            <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-cyan-400" /> Soft techno playlists by Guy</div>
           </div>
         </div>
         <div class="relative">
@@ -39,10 +40,10 @@
           <div class="relative overflow-hidden rounded-3xl border border-amber-500/20 bg-stone-900/70 shadow-2xl shadow-amber-500/20">
             <div class="h-full w-full bg-[url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center min-h-[360px]" />
             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 space-y-3">
-              <p class="text-xs uppercase tracking-[0.3em] text-amber-300">Inside Guy's</p>
-              <p class="text-lg font-semibold">Warm timber, clean lines, and a calm beat to keep the scissors on rhythm.</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-amber-300">{{ heroCopy.card.eyebrow }}</p>
+              <p class="text-lg font-semibold">{{ heroCopy.card.description }}</p>
               <div class="flex items-center gap-3 text-sm text-amber-200/80">
-                <span class="h-2 w-2 rounded-full bg-lime-400" /> Palermo, Buenos Aires
+                <span class="h-2 w-2 rounded-full bg-lime-400" /> {{ heroCopy.card.location }}
               </div>
             </div>
           </div>
@@ -51,3 +52,15 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { computed } from 'vue';
+import { useI18n } from '../i18n';
+import { useWhatsApp } from '../composables/useWhatsApp';
+
+const { t } = useI18n();
+const heroCopy = computed(() => t('hero'));
+const bulletAccentClasses = ['bg-emerald-400 animate-pulse', 'bg-amber-400', 'bg-cyan-400'];
+
+const { whatsappLink, handleWhatsappClick } = useWhatsApp();
+</script>
