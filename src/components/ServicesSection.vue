@@ -5,12 +5,6 @@
         <p class="text-xs uppercase tracking-[0.3em] text-[#f2dea2]">{{ servicesCopy.badge }}</p>
         <h3 class="text-3xl md:text-4xl font-bold mt-2 text-gold-strong">{{ servicesCopy.title }}</h3>
       </div>
-      <a href="https://maps.google.com/?q=Guy's+Barber+Shop+Argentina" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-[#f2dea2] hover:opacity-80">
-        {{ servicesCopy.viewLocation }}
-        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 18l6-6-6-6" />
-        </svg>
-      </a>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">

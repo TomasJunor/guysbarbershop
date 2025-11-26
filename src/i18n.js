@@ -20,7 +20,7 @@ const copy = {
       title: "Donde las tijeras van al ritmo de la musica.",
       description: "Guy's Barber Shop mezcla cortes artesanales, charlas calidas y una sesion con toques de DJ elegida por el propio Guy. Entra a un local en Palermo con vibras inigualables y una banda sonora que nunca falta.",
       primaryCta: "Reserva tu proximo fade",
-      secondaryCta: "Ver el menu",
+      secondaryCta: "Ver servicios",
       bullets: [
         "Aceptamos clientes sin turno",
         "Cafe de especialidad y rincon de vinilos",
@@ -34,7 +34,7 @@ const copy = {
     },
     features: {
       badge: "La experiencia",
-      title: "Mas que un corte, es un reset",
+      title: "Mas que un corte, es un reset.",
       meta: "Playlists de soft techno elegidas cada semana",
       cards: [
         {
@@ -52,8 +52,8 @@ const copy = {
       ]
     },
     services: {
-      badge: "El menu",
-      title: "Cortes frescos, barbas perfectas, terminaciones suaves.",
+      badge: "Servicios",
+      title: "Estos son algunas de nuestras especialidades.",
       viewLocation: "Ver ubicacion",
       cards: [
         {

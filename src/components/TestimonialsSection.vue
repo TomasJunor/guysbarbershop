@@ -10,10 +10,10 @@
 
     <div class="grid md:grid-cols-3 gap-6">
       <article
-        v-for="card in testimonialsCopy.cards"
-        :key="card.name"
-        class="rounded-2xl border border-gold-soft bg-stone-950/70 p-6 shadow-gold"
-      >
+  v-for="card in testimonialsCopy.cards"
+  :key="card.name"
+  class="rounded-2xl border border-gold-soft bg-stone-950/70 p-6 shadow-gold flex flex-col"
+>
         <div class="flex items-center justify-between">
           <h4 class="font-semibold">{{ card.name }}</h4>
           <span class="text-[#f2dea2]">5/5</span>
@@ -21,7 +21,7 @@
         <p class="text-stone-300/80 mt-3 leading-relaxed">
           {{ card.quote }}
         </p>
-        <p class="text-xs text-stone-400 mt-4">{{ card.note }}</p>
+        <p class="text-xs text-stone-400 mt-auto pt-4">{{ card.note }}</p>
       </article>
     </div>
   </section>
