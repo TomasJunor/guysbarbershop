@@ -1,8 +1,9 @@
 module.exports = {
   content: [
     './index.html',
-    './LandingPage.vue',
     './main.js',
+    './LandingPage.vue',
+    './src/**/*.{vue,js,ts}',
   ],
   theme: {
     extend: {},

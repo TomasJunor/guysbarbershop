@@ -1,46 +1,60 @@
 <template>
-    <header class="border-b border-amber-800/50 bg-stone-900 sticky top-0 z-50">
-      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div class="flex items-center">
-          <div class="mr-2 text-amber-500">
-            <svg fill="currentColor" width="32" height="32" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.971 468.971" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 468.971 468.971" transform="rotate(90)"><g id="SVGRepo_bgCarrier"  stroke-width="0" class="h-8 w-8"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="m44.162,329.024c-17.14,17.14-17.14,45.029 0,62.169 8.57,8.57 19.828,12.855 31.085,12.855s22.515-4.285 31.084-12.855c17.14-17.14 17.14-45.029 0-62.169s-45.029-17.14-62.169,0zm51.563,51.563c-11.291,11.291-29.664,11.292-40.957,0-11.291-11.292-11.291-29.665 0-40.956 5.646-5.646 13.061-8.469 20.479-8.469 7.415,0 14.833,2.823 20.478,8.469 11.291,11.291 11.291,29.664 0,40.956z"></path> <path d="m414.483,329.024c-17.14-17.14-45.029-17.14-62.169,0-17.14,17.14-17.14,45.029 0,62.169 8.57,8.57 19.827,12.855 31.084,12.855s22.515-4.285 31.084-12.855c17.141-17.14 17.141-45.029 0.001-62.169zm-10.607,51.563c-11.292,11.291-29.665,11.292-40.956,0-11.292-11.292-11.292-29.665 0-40.956 5.646-5.646 13.061-8.469 20.478-8.469 7.415,0 14.833,2.823 20.478,8.469 11.292,11.291 11.292,29.664 0,40.956z"></path> <path d="m466.774,432.878l-25.125-25.125c11.008-13.409 16.996-30.067 16.996-47.645 0-20.099-7.827-38.995-22.039-53.207-27.549-27.549-71.318-29.226-100.846-5.038l-71.66-71.66 146.46-194.907c2.365-3.148 1.894-7.588-1.08-10.169-2.973-2.581-7.437-2.424-10.22,0.36l-169.938,169.939-169.939-169.939c-2.784-2.784-7.247-2.941-10.22-0.36-2.973,2.581-3.444,7.022-1.079,10.169l146.466,194.902-71.664,71.664c-29.528-24.187-73.297-22.511-100.846,5.039-14.213,14.212-22.04,33.108-22.04,53.208s7.827,38.995 22.039,53.208c14.669,14.669 33.938,22.004 53.208,22.004 19.269,0 38.538-7.335 53.208-22.004 14.212-14.212 22.039-33.108 22.039-53.208 0-16.413-5.224-32.02-14.877-44.933l1.173-.593c13.102-6.629 27.789-10.132 42.474-10.132 7.253,0 14.5,0.841 21.54,2.5 2.898,0.682 5.927-0.414 7.716-2.794l20.804-27.683 20.805,27.686c1.789,2.381 4.817,3.478 7.713,2.795 21.537-5.067 44.271-2.358 64.014,7.63l1.171,.593c-9.653,12.913-14.876,28.52-14.876,44.932 0,20.099 7.827,38.995 22.039,53.208 14.669,14.669 33.938,22.004 53.208,22.004 16.918,0 33.834-5.658 47.639-16.966l25.131,25.13c1.464,1.465 3.384,2.197 5.303,2.197s3.839-0.732 5.303-2.197c2.93-2.93 2.93-7.679 0-10.608zm-352.462-33.704c-21.541,21.541-56.591,21.54-78.13,0-10.435-10.435-16.182-24.308-16.182-39.065 0-14.757 5.747-28.631 16.182-39.065 10.77-10.77 24.917-16.156 39.065-16.156 14.148,0 28.295,5.385 39.065,16.156 10.435,10.435 16.182,24.308 16.182,39.065 0,14.757-5.747,28.63-16.182,39.065zm220.444-287.97l-81.37,108.286-13.458-13.458 94.828-94.828zm-135.357,180.121c-15.171-2.851-30.988-2.416-46.019,1.255l50.27-50.27 16.292,21.68-20.543,27.335zm79.954-1.863c-6.714,0-13.448,0.619-20.102,1.868l-135.349-180.111 181.354,181.354c-8.478-2.067-17.177-3.111-25.903-3.111zm64.98,109.712c-10.435-10.435-16.182-24.308-16.182-39.065 0-14.757 5.747-28.631 16.182-39.065 10.77-10.77 24.917-16.156 39.065-16.156s28.295,5.385 39.065,16.156c10.435,10.435 16.181,24.308 16.181,39.065 0,14.757-5.747,28.631-16.182,39.065-21.539,21.541-56.588,21.541-78.129,0z"></path> </g> </g></svg>
+  <header class="sticky top-0 z-50 backdrop-blur bg-stone-950/80 border-b border-amber-500/20">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="bg-gradient-to-br from-amber-400 via-orange-500 to-pink-500 p-[2px] rounded-full shadow-lg shadow-amber-500/30">
+          <div class="bg-stone-950 rounded-full p-2">
+            <svg class="h-8 w-8 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 19c-1 0-1.5-.5-2-1-1-1-1.5-2.5-1.5-4.5S4 10 5 8.5C6 7 7 6 7 5c0-.5.5-2 5-2s5 1.5 5 2c0 1 1 2 2 3.5 1 1.5 1.5 3 1.5 5s-.5 3.5-1.5 4.5c-.5.5-1 1-2 1H7Z" />
+              <path d="M9 9.5c.5.5 1.5 1 3 1s2.5-.5 3-1" />
+              <path d="m9 13 6 2" />
+            </svg>
           </div>
-          <h1 class="text-2xl font-bold text-amber-500">Guy's Barbershop</h1>
         </div>
-        
-  <nav class="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
-          <a href="#features" class="text-amber-200 hover:text-amber-400 transition-colors">Features</a>
-          <a href="#testimonials" class="text-amber-200 hover:text-amber-400 transition-colors">Testimonials</a>
-          <a href="#services" class="text-amber-200 hover:text-amber-400 transition-colors">Services</a>
-          <a href="#contact" class="text-amber-200 hover:text-amber-400 transition-colors">Contact</a>
-        </nav>
-        
-        <button class="hidden md:block px-4 py-2 bg-amber-700 hover:bg-amber-600 text-amber-100 rounded border border-amber-500 transition-colors shadow-md">
-          Book Now
-        </button>
-        
-        <button class="md:hidden text-amber-500" @click="mobileMenuOpen = !mobileMenuOpen">
-          <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
-          <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
-        </button>
-      </div>
-      
-      <!-- Mobile Menu -->
-      <div v-if="mobileMenuOpen" class="md:hidden bg-stone-800 border-t border-amber-800/50">
-        <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
-          <a href="#features" class="text-amber-200 hover:text-amber-400 transition-colors" @click="mobileMenuOpen = false">Features</a>
-          <a href="#testimonials" class="text-amber-200 hover:text-amber-400 transition-colors" @click="mobileMenuOpen = false">Testimonials</a>
-          <a href="#services" class="text-amber-200 hover:text-amber-400 transition-colors" @click="mobileMenuOpen = false">Services</a>
-          <a href="#contact" class="text-amber-200 hover:text-amber-400 transition-colors" @click="mobileMenuOpen = false">Contact</a>
-          <button class="px-4 py-2 bg-amber-700 hover:bg-amber-600 text-amber-100 rounded border border-amber-500 transition-colors shadow-md w-full">
-            Book Now
-          </button>
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-amber-400/80">Guy's Barber Shop</p>
+          <h1 class="text-xl md:text-2xl font-semibold">Cuts • Fades • Beats</h1>
         </div>
       </div>
-    </header>
+
+      <nav class="hidden md:flex items-center gap-10 text-sm">
+        <a class="hover:text-amber-200 transition-colors" href="#features">Experience</a>
+        <a class="hover:text-amber-200 transition-colors" href="#services">Services</a>
+        <a class="hover:text-amber-200 transition-colors" href="#testimonials">Community</a>
+        <a class="hover:text-amber-200 transition-colors" href="#contact">Visit</a>
+      </nav>
+
+      <button class="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 shadow-lg shadow-amber-500/30 hover:from-amber-400 hover:to-orange-400 transition-colors">
+        Book a seat
+        <span class="h-2 w-2 rounded-full bg-lime-400 animate-pulse" />
+      </button>
+
+      <button class="md:hidden text-amber-300" @click="mobileMenuOpen = !mobileMenuOpen">
+        <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 6l12 12M6 18L18 6" />
+        </svg>
+      </button>
+    </div>
+
+    <div v-if="mobileMenuOpen" class="md:hidden border-t border-amber-500/20 bg-stone-950/95">
+      <div class="max-w-6xl mx-auto px-4 py-4 space-y-3">
+        <a class="block text-amber-100 hover:text-amber-300" href="#features" @click="mobileMenuOpen = false">Experience</a>
+        <a class="block text-amber-100 hover:text-amber-300" href="#services" @click="mobileMenuOpen = false">Services</a>
+        <a class="block text-amber-100 hover:text-amber-300" href="#testimonials" @click="mobileMenuOpen = false">Community</a>
+        <a class="block text-amber-100 hover:text-amber-300" href="#contact" @click="mobileMenuOpen = false">Visit</a>
+        <button class="w-full px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 font-semibold" @click="mobileMenuOpen = false">
+          Book a seat
+        </button>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+
 const mobileMenuOpen = ref(false);
 </script>

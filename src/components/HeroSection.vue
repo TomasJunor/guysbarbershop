@@ -1,25 +1,53 @@
 <template>
-  <section class="relative py-20 overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')] bg-cover bg-center opacity-20"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-stone-900/80 to-stone-900/95"></div>
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-4xl md:text-6xl font-bold mb-6 text-amber-100">
-          Precision Grooming for the Modern Gentleman
-        </h2>
-        <p class="text-xl mb-8 text-amber-200/80">
-          Experience the perfect blend of traditional craftsmanship and contemporary style at Guy's Barbershop, where every cut is a masterpiece.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <button class="px-8 py-3 bg-amber-700 hover:bg-amber-600 text-amber-100 rounded-md border border-amber-500 transition-colors shadow-md text-lg font-medium">
-            Book Your Appointment
-          </button>
-          <button class="px-8 py-3 bg-transparent hover:bg-stone-800 text-amber-400 rounded-md border border-amber-700 transition-colors shadow-md text-lg font-medium">
-            Explore Services
-          </button>
+  <section class="relative overflow-hidden" id="hero">
+    <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-950 to-black" />
+    <div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_20%,rgba(255,200,87,0.18),transparent_35%),radial-gradient(circle_at_80%_30%,rgba(255,125,69,0.2),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(94,234,212,0.12),transparent_45%)]" />
+    <div class="absolute -right-20 -bottom-32 h-80 w-80 rounded-full bg-gradient-to-br from-amber-500/30 via-orange-500/10 to-emerald-400/10 blur-3xl" />
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 relative">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <p class="inline-flex items-center gap-2 px-3 py-1 text-xs uppercase tracking-[0.3em] rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-200">
+            Palermo • Since 2016 • Soft Techno Nights
+          </p>
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+            Where sharp fades meet a smooth electronic groove.
+          </h2>
+          <p class="text-lg text-stone-200/80 leading-relaxed">
+            Guy’s Barber Shop blends artisan cuts, warm conversation, and a subtle DJ set curated by Guy himself. Step into a cozy Palermo studio with vintage wood, modern lines, and a soundtrack that never overpowers your vibe.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button class="group inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 font-semibold shadow-lg shadow-amber-500/30 hover:from-amber-400 hover:to-orange-400 transition-all">
+              Book your next fade
+              <span class="h-2 w-2 rounded-full bg-lime-400 animate-ping" />
+            </button>
+            <a href="#services" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-amber-500/30 text-amber-100 hover:border-amber-300 hover:text-amber-200 transition-colors">
+              See the menu
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-6 text-sm text-stone-300/80">
+            <div class="flex items-center gap-2">
+              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" /> Walk-ins welcome</div>
+            <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-amber-400" /> Specialty coffee & vinyl corner</div>
+            <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-cyan-400" /> Soft techno playlists by Guy</div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-8 bg-gradient-to-br from-amber-500/20 via-orange-500/10 to-amber-500/5 blur-3xl" />
+          <div class="relative overflow-hidden rounded-3xl border border-amber-500/20 bg-stone-900/70 shadow-2xl shadow-amber-500/20">
+            <div class="h-full w-full bg-[url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center min-h-[360px]" />
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 space-y-3">
+              <p class="text-xs uppercase tracking-[0.3em] text-amber-300">Inside Guy's</p>
+              <p class="text-lg font-semibold">Warm timber, clean lines, and a calm beat to keep the scissors on rhythm.</p>
+              <div class="flex items-center gap-3 text-sm text-amber-200/80">
+                <span class="h-2 w-2 rounded-full bg-lime-400" /> Palermo, Buenos Aires
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-stone-900 to-transparent"></div>
   </section>
 </template>
