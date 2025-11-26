@@ -2,10 +2,10 @@
   <section id="services" class="max-w-6xl mx-auto px-4">
     <div class="flex items-center justify-between flex-wrap gap-4 mb-10">
       <div>
-        <p class="text-xs uppercase tracking-[0.3em] text-amber-300">{{ servicesCopy.badge }}</p>
-        <h3 class="text-3xl md:text-4xl font-bold mt-2">{{ servicesCopy.title }}</h3>
+        <p class="text-xs uppercase tracking-[0.3em] text-[#f2dea2]">{{ servicesCopy.badge }}</p>
+        <h3 class="text-3xl md:text-4xl font-bold mt-2 text-gold-strong">{{ servicesCopy.title }}</h3>
       </div>
-      <a href="https://maps.google.com/?q=Guy's+Barber+Shop+Argentina" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-amber-200 hover:text-amber-100">
+      <a href="https://maps.google.com/?q=Guy's+Barber+Shop+Argentina" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-[#f2dea2] hover:opacity-80">
         {{ servicesCopy.viewLocation }}
         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 18l6-6-6-6" />
@@ -18,17 +18,17 @@
         v-for="card in servicesCopy.cards"
         :key="card.name"
         :class="[
-          'rounded-2xl border border-amber-500/20 p-6 shadow-lg shadow-amber-500/15 bg-stone-900/70',
-          card.badge ? 'bg-gradient-to-br from-stone-900 to-stone-950 shadow-xl shadow-amber-500/25' : ''
+          'rounded-2xl border border-gold-soft p-6 shadow-gold bg-stone-950/70',
+          card.badge ? 'bg-gold-gradient-dark' : ''
         ]"
       >
         <div class="mb-4">
           <h4 class="text-xl font-semibold">{{ card.name }}</h4>
-          <p v-if="card.badge" class="text-amber-300 text-sm">{{ card.badge }}</p>
+          <p v-if="card.badge" class="text-[#f2dea2] text-sm">{{ card.badge }}</p>
         </div>
         <p class="text-stone-300/80 mt-3">{{ card.description }}</p>
-        <div class="mt-4 inline-flex items-center gap-2 text-xs text-emerald-300">
-          <span class="h-2 w-2 rounded-full bg-emerald-400" /> {{ card.duration }}
+        <div class="mt-4 inline-flex items-center gap-2 text-xs text-[#f2dea2]/80">
+          <span class="h-2 w-2 rounded-full bg-[#c6a24a]" /> {{ card.duration }}
         </div>
       </div>
     </div>
@@ -37,12 +37,12 @@
       <div
         v-for="(extra, index) in servicesCopy.extras"
         :key="extra.title"
-        class="rounded-2xl border border-amber-500/20 bg-stone-900/70 p-6"
+        class="rounded-2xl border border-gold-soft bg-stone-950/70 p-6"
       >
-        <div class="flex items-center gap-3 text-amber-100">
+        <div class="flex items-center gap-3 text-[#f2dea2]">
           <svg
             v-if="index === 0"
-            class="h-6 w-6 text-emerald-300"
+            class="h-6 w-6 text-[#f2dea2]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -54,7 +54,7 @@
           </svg>
           <svg
             v-else
-            class="h-6 w-6 text-cyan-300"
+            class="h-6 w-6 text-[#c6a24a]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

@@ -18,8 +18,8 @@ const copy = {
     },
     hero: {
       badge: "Palermo - Desde 2016 - Noches de soft techno",
-      title: "Donde los fades afilados se mezclan con grooves suaves.",
-      description: "Guy's Barber Shop mezcla cortes artesanales, charlas calidas y una sesion con toques de DJ curada por el propio Guy. Entra a un local en Palermo con vibras inigualables y una banda sonora que nunca falta.",
+      title: "Donde las tijeras van al ritmo de la musica.",
+      description: "Guy's Barber Shop mezcla cortes artesanales, charlas calidas y una sesion con toques de DJ elegida por el propio Guy. Entra a un local en Palermo con vibras inigualables y una banda sonora que nunca falta.",
       primaryCta: "Reserva tu proximo fade",
       secondaryCta: "Ver el menu",
       bullets: [
@@ -36,11 +36,11 @@ const copy = {
     features: {
       badge: "La experiencia",
       title: "Mas que un corte, es un reset",
-      meta: "Playlists de soft techno curadas cada semana",
+      meta: "Playlists de soft techno elegidas cada semana",
       cards: [
         {
-          title: "Fades de autor",
-          copy: "Consultas personalizadas, lineas precisas y terminaciones que duran. Mezclamos tecnica clasica con estilo moderno para que salgas listo para la camara."
+          title: "Cortes de autor",
+          copy: "Consultas personalizadas, cortes precisos y terminaciones que duran. Mezclamos tecnica clasica con estilo moderno para que salgas impecable."
         },
         {
           title: "Espacio con banda sonora",
@@ -48,7 +48,7 @@ const copy = {
         },
         {
           title: "Hospitalidad primero",
-          copy: "Espresso o cold brew al llegar, tips de producto antes de irte y una silla que se siente como si un amigo te la hubiera guardado."
+          copy: "Espresso o bebida al llegar, tips de producto antes de irte y una silla que se siente como si un amigo te la hubiera guardado."
         }
       ]
     },

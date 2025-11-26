@@ -1,10 +1,10 @@
 <template>
-  <header class="sticky top-0 z-50 backdrop-blur bg-stone-950/80 border-b border-amber-500/20">
+  <header class="sticky top-0 z-50 backdrop-blur bg-stone-950/85 border-b border-gold-soft">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="bg-gradient-to-br from-amber-400 via-orange-500 to-pink-500 p-[2px] rounded-full shadow-lg shadow-amber-500/30">
+        <div class="bg-gold-gradient p-[2px] rounded-full shadow-gold">
           <div class="bg-stone-950 rounded-full p-2">
-            <svg class="h-8 w-8 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="h-8 w-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M7 19c-1 0-1.5-.5-2-1-1-1-1.5-2.5-1.5-4.5S4 10 5 8.5C6 7 7 6 7 5c0-.5.5-2 5-2s5 1.5 5 2c0 1 1 2 2 3.5 1 1.5 1.5 3 1.5 5s-.5 3.5-1.5 4.5c-.5.5-1 1-2 1H7Z" />
               <path d="M9 9.5c.5.5 1.5 1 3 1s2.5-.5 3-1" />
               <path d="m9 13 6 2" />
@@ -12,8 +12,8 @@
           </div>
         </div>
         <div>
-          <p class="text-xs uppercase tracking-[0.25em] text-amber-400/80">{{ headerCopy.eyebrow }}</p>
-          <!-- <h1 class="text-xl md:text-2xl font-semibold">{{ headerCopy.title }}</h1> -->
+          <p class="text-xs uppercase tracking-[0.25em] text-[#f2dea2]">{{ headerCopy.eyebrow }}</p>
+          <h1 class="text-xl md:text-2xl font-semibold text-gold-strong">{{ headerCopy.title }}</h1>
         </div>
       </div>
 
@@ -21,7 +21,7 @@
         <a
           v-for="item in navLinks"
           :key="item.href"
-          class="hover:text-amber-200 transition-colors"
+          class="text-stone-200 hover:text-[#f2dea2] transition-colors"
           :href="item.href"
         >
           {{ item.label }}
@@ -29,7 +29,7 @@
       </nav>
 
       <button
-        class="hidden md:inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] rounded-full border border-amber-500/40 text-amber-100 hover:text-amber-50"
+        class="hidden md:inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] rounded-full border border-gold text-[#f2dea2] hover:opacity-80 transition-opacity"
         type="button"
         @click="toggleLocale"
       >
@@ -37,7 +37,7 @@
       </button>
 
       <a
-        class="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 shadow-lg shadow-amber-500/30 hover:from-amber-400 hover:to-orange-400 transition-colors"
+        class="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-full bg-gold-gradient shadow-gold hover:opacity-90 transition-opacity"
         :href="whatsappLink || '#'"
         target="_blank"
         rel="noreferrer noopener"
@@ -45,10 +45,10 @@
         @click="handleWhatsappClick"
       >
         {{ headerCopy.ctaLabel }}
-        <span class="h-2 w-2 rounded-full bg-lime-400 animate-pulse" />
+        <span class="h-2 w-2 rounded-full bg-[#c6a24a] animate-pulse" />
       </a>
 
-      <button class="md:hidden text-amber-300" @click="mobileMenuOpen = !mobileMenuOpen">
+      <button class="md:hidden text-[#f2dea2]" @click="mobileMenuOpen = !mobileMenuOpen">
         <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -58,26 +58,26 @@
       </button>
     </div>
 
-    <div v-if="mobileMenuOpen" class="md:hidden border-t border-amber-500/20 bg-stone-950/95">
+    <div v-if="mobileMenuOpen" class="md:hidden border-t border-gold-soft bg-stone-950/95">
       <div class="max-w-6xl mx-auto px-4 py-4 space-y-3">
         <a
           v-for="item in navLinks"
           :key="item.href"
-          class="block text-amber-100 hover:text-amber-300"
+          class="block text-stone-200 hover:text-[#f2dea2]"
           :href="item.href"
           @click="mobileMenuOpen = false"
         >
           {{ item.label }}
         </a>
         <button
-          class="w-full px-4 py-2 rounded-full border border-amber-500/40 text-amber-100 font-semibold"
+          class="w-full px-4 py-2 rounded-full border border-gold text-[#f2dea2] font-semibold"
           type="button"
           @click="toggleLocale"
         >
           {{ localeButtonLabel }}
         </button>
         <a
-          class="w-full px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 font-semibold text-center inline-flex justify-center"
+          class="w-full px-4 py-2 rounded-full bg-gold-gradient text-stone-950 font-semibold text-center inline-flex justify-center shadow-gold hover:opacity-90 transition-opacity"
           :href="whatsappLink || '#'"
           target="_blank"
           rel="noreferrer noopener"
@@ -101,7 +101,7 @@ const mobileMenuOpen = ref(false);
 const { t, locale, setLocale } = useI18n();
 const headerCopy = computed(() => t('header'));
 const navLinks = computed(() => headerCopy.value?.nav ?? []);
-const localeButtonLabel = computed(() => (locale.value === 'es' ? 'ES → EN' : 'EN → ES'));
+const localeButtonLabel = computed(() => (locale.value === 'es' ? 'ES ? EN' : 'EN ? ES'));
 
 const { whatsappLink, handleWhatsappClick } = useWhatsApp();
 
