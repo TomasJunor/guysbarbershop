@@ -36,9 +36,7 @@
               @click="handleWhatsappClick"
             >
               {{ ctaCopy.whatsappCta }}
-              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 17c5 3 10 0 10-5a5 5 0 0 0-9-2l-1 2-2 1 1 4Z" />
-              </svg>
+              <span class="pi pi-whatsapp"></span>
             </a>
           </div>
         </div>

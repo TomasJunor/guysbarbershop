@@ -109,7 +109,7 @@ const copy = {
     cta: {
       badge: "Visitanos",
       title: "Reserva un turno; la musica ya suena.",
-      description: "Escribinos por Instagram, mandanos un WhatsApp o simplemente pasa. Estamos a metros del subte Scalabrini, rodeados de cafes y galerias de Palermo.",
+      description: "Escribinos por Instagram, mandanos un WhatsApp o simplemente pasa. Estamos a metros del subte, linea D (Estacion Scalabrini Ortiz), rodeados de cafes y galerias de Palermo.",
       chips: ["Lun-Vie - 09:00-20:00", "Beruti 3776, Palermo"],
       mapCta: "Abrir en Maps",
       whatsappCta: "Escribinos por WhatsApp",
