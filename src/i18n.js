@@ -17,7 +17,6 @@ const copy = {
       ctaLabel: "Reservar turno"
     },
     hero: {
-      badge: "Palermo - Desde 2016 - Noches de soft techno",
       title: "Donde las tijeras van al ritmo de la musica.",
       description: "Guy's Barber Shop mezcla cortes artesanales, charlas calidas y una sesion con toques de DJ elegida por el propio Guy. Entra a un local en Palermo con vibras inigualables y una banda sonora que nunca falta.",
       primaryCta: "Reserva tu proximo fade",
@@ -110,7 +109,7 @@ const copy = {
     cta: {
       badge: "Visitanos",
       title: "Reserva un turno; la musica ya suena.",
-      description: "Escribinos por Instagram, mandanos un WhatsApp o simplemente pasa. Estamos a metros del subte en Guemes, rodeados de cafes y galerias de Palermo.",
+      description: "Escribinos por Instagram, mandanos un WhatsApp o simplemente pasa. Estamos a metros del subte Scalabrini, rodeados de cafes y galerias de Palermo.",
       chips: ["Lun-Vie - 09:00-20:00", "Beruti 3776, Palermo"],
       mapCta: "Abrir en Maps",
       whatsappCta: "Escribinos por WhatsApp",

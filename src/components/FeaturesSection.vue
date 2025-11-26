@@ -17,7 +17,6 @@
       >
         <div class="flex items-center justify-between mb-4">
           <h4 class="text-xl font-semibold">{{ card.title }}</h4>
-          <span class="text-[#f2dea2]">{{ String(index + 1).padStart(2, '0') }}</span>
         </div>
         <p class="text-stone-300/80 leading-relaxed">
           {{ card.copy }}

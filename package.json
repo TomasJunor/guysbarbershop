@@ -17,6 +17,7 @@
     "@tailwindcss/postcss": "^4.1.6",
     "@vitejs/plugin-vue": "^5.2.4",
     "autoprefixer": "^10.4.21",
+    "flag-icons": "^7.5.0",
     "lucide-vue-next": "^0.509.0",
     "postcss": "^8.5.3",
     "vite": "^6.3.5",
