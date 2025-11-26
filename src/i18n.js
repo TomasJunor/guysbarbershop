@@ -35,7 +35,6 @@ const copy = {
     features: {
       badge: "La experiencia",
       title: "Mas que un corte, es un reset.",
-      meta: "Playlists de soft techno elegidas cada semana",
       cards: [
         {
           title: "Cortes de autor",
@@ -62,9 +61,9 @@ const copy = {
           duration: "30 minutos"
         },
         {
-          name: "Fade + barba",
+          name: "Corte + barba",
           badge: "Mas reservado",
-          description: "Skin fade o taper, esculpido de barba con toalla caliente y balsamo refrescante. Equilibrado para mantener la linea impecable.",
+          description: "Corte o taper, esculpido de barba con toalla caliente y balsamo refrescante. Equilibrado para mantener la linea impecable.",
           duration: "45 minutos"
         },
         {

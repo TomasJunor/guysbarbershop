@@ -5,9 +5,9 @@
         <p class="text-xs uppercase tracking-[0.3em] text-[#f2dea2]">{{ featuresCopy.badge }}</p>
         <h3 class="text-3xl md:text-4xl font-bold mt-2 text-gold-strong">{{ featuresCopy.title }}</h3>
       </div>
-      <div class="flex items-center gap-2 text-sm text-[#f2dea2]/80">
+      <!-- <div class="flex items-center gap-2 text-sm text-[#f2dea2]/80">
         <span class="h-2 w-2 rounded-full bg-[#c6a24a]" /> {{ featuresCopy.meta }}
-      </div>
+      </div> -->
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <div

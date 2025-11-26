@@ -51,7 +51,7 @@
         :aria-label="localeToggleLabel"
         @click="toggleLocale"
       >
-         <span :class="['fi', `fi-${localeFlag}`, 'w-5', 'h-5']"></span>
+        <span :class="['fi', `fi-${localeFlag}`, 'w-4', 'h-4']"></span>
       </button>
 
       <a
