@@ -42,3 +42,45 @@
 .shadow-gold {
   box-shadow: 0 16px 40px var(--gold-shadow);
 }
+
+.flag {
+  width: 22px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flag-lg {
+  width: 30px;
+  height: 18px;
+}
+
+.flag-ar {
+  background-image: linear-gradient(
+    180deg,
+    #74acdf 0%,
+    #74acdf 33%,
+    #ffffff 33%,
+    #ffffff 66%,
+    #74acdf 66%,
+    #74acdf 100%
+  );
+}
+
+.flag-us {
+  background-image: repeating-linear-gradient(
+      180deg,
+      #b22234 0%,
+      #b22234 10%,
+      #ffffff 10%,
+      #ffffff 20%
+    ),
+    linear-gradient(#3c3b6e, #3c3b6e);
+  background-size: 100% 100%, 40% 60%;
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+}

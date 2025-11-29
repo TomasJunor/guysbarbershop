@@ -46,12 +46,12 @@
 
       <!-- Desktop flag button -->
       <button
-        class="hidden md:inline-flex items-center justify-center w-10 h-10 rounded-full border border-gold text-2xl"
+        class="hidden md:inline-flex items-center justify-center w-10 h-10 rounded-full border border-gold"
         type="button"
         :aria-label="localeToggleLabel"
         @click="toggleLocale"
       >
-        <span :class="['fi', `fi-${localeFlag}`, 'w-4', 'h-4']"></span>
+        <span class="flag" :class="localeFlagClass" aria-hidden="true" />
       </button>
 
       <a
@@ -119,12 +119,12 @@
         </a>
         <!-- Mobile flag button -->
         <button
-          class="w-full px-4 py-2 rounded-full border border-gold text-[#f2dea2] font-semibold flex items-center justify-center text-2xl"
+          class="w-full px-4 py-2 rounded-full border border-gold text-[#f2dea2] font-semibold flex items-center justify-center"
           type="button"
           :aria-label="localeToggleLabel"
           @click="toggleLocale"
         >
-          <span :class="['fi', `fi-${localeFlag}`, 'w-5', 'h-5']"></span>
+          <span class="flag flag-lg" :class="localeFlagClass" aria-hidden="true" />
         </button>
         <a
           class="w-full px-4 py-2 rounded-full bg-gold-gradient text-stone-950 font-semibold text-center inline-flex justify-center shadow-gold hover:opacity-90 transition-opacity"
@@ -151,7 +151,9 @@ const mobileMenuOpen = ref(false);
 const { t, locale, setLocale } = useI18n();
 const headerCopy = computed(() => t("header"));
 const navLinks = computed(() => headerCopy.value?.nav ?? []);
-const localeFlag = computed(() => (locale.value === "es" ? "ar" : "us"));
+const localeFlagClass = computed(() =>
+  locale.value === "es" ? "flag-ar" : "flag-us"
+);
 const localeToggleLabel = computed(() =>
   locale.value === "es" ? "Cambiar a inglés" : "Switch to Spanish"
 );
@@ -167,10 +169,3 @@ const onMobileWhatsappClick = (event) => {
   mobileMenuOpen.value = false;
 };
 </script>
-
-<style scoped>
-.emoji-flag {
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
-    system-ui, sans-serif;
-}
-</style>

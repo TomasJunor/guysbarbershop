@@ -21,9 +21,9 @@
           <p v-if="card.badge" class="text-[#f2dea2] text-sm">{{ card.badge }}</p>
         </div>
         <p class="text-stone-300/80 mt-3">{{ card.description }}</p>
-        <div class="mt-4 inline-flex items-center gap-2 text-xs text-[#f2dea2]/80">
+        <!-- <div class="mt-4 inline-flex items-center gap-2 text-xs text-[#f2dea2]/80">
           <span class="h-2 w-2 rounded-full bg-[#c6a24a]" /> {{ card.duration }}
-        </div>
+        </div> -->
       </div>
     </div>
 

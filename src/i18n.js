@@ -50,6 +50,29 @@ const copy = {
         }
       ]
     },
+    gallery: {
+      badge: "El salón",
+      title: "Escenas de un dia en Guy's.",
+      description: "Entre turnos, rituales de toalla caliente y musica que nos inspira.",
+      dotLabel: "Ir a la imagen",
+      slides: [
+        {
+          alt: "Detalle de afeitada en progreso",
+          caption: "Afeitadas precisas con terminación en navaja",
+          meta: "By Guy · Palermo"
+        },
+        {
+          alt: "Toalla caliente sobre la barba",
+          caption: "Ritual de toalla caliente, afeitado y aceites",
+          meta: "Servicio premium"
+        },
+        {
+          alt: "Detalle de productos de styling",
+          caption: "Productos seleccionados para cada tipo de cabello",
+          meta: "Productos profesionales"
+        }
+      ]
+    },
     services: {
       badge: "Servicios",
       title: "Estos son algunas de nuestras especialidades.",
@@ -181,6 +204,29 @@ const copy = {
         {
           title: "Hospitality first",
           copy: "Espresso or cold brew when you arrive, product tips before you leave and a seat that feels like a friend saved it for you."
+        }
+      ]
+    },
+    gallery: {
+      badge: "The studio",
+      title: "Scenes from a day at Guy's.",
+      description: "Between appointments, hot towel rituals and textures that inspire us. Palermo energy on display.",
+      dotLabel: "Go to image",
+      slides: [
+        {
+          alt: "Close-up of a fade in progress",
+          caption: "Razor-sharp fades with polished details",
+          meta: "By Guy · Palermo"
+        },
+        {
+          alt: "Hot towel covering a beard before shave",
+          caption: "Classic ritual: steam, oils and calm",
+          meta: "Premium service"
+        },
+        {
+          alt: "Styling products lined up on wood shelf",
+          caption: "Curated products for every hair type",
+          meta: "Merch & retail"
         }
       ]
     },
